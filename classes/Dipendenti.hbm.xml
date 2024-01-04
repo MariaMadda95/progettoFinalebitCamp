@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Dipendenti" table="dipendenti">
+        <id name="id" type="long" column="id">
+            <generator class="native" />
+        </id>
+        <property name="nome" type="string" column="nome" />
+        <property name="telefono" type="string" column="telefono" />
+        <property name="mail" type="string" column="mail" />
+        <property name="password" type="string" column="password" />
+        <property name="idruolo" type="long" column="idruolo" />
+        <property name="dataassunzione" type="string" column="dataassunzione" />
+        <property name="costoorario" type="double" column="costoorario" />
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Clienti" table="Clienti">
+		<id name="id" type="long" column="id">
+			<generator class="native" />
+		</id>
+		<property name="nome" type="string" column="nome" />
+		<property name="via" type="string" column="via" />
+		<property name="civico" type="string" column="civico" />
+		<property name="citta" type="string" column="citta" />
+		<property name="telefono" type="string" column="telefono" />
+		<property name="mail" type="string" column="mail" />
+		<property name="password" type="string" column="password" />
+	</class>
+	
+</hibernate-mapping>

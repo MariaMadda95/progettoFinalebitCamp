@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.DettaglioOrdineCliente" table="DettaglioOrdineCliente">
+        <id name="id" type="long" column="id">
+            <generator class="native" />
+        </id>
+        <property name="idordinecliente" type="long" column="idordinecliente" />
+        <property name="idprodotto" type="long" column="idprodotto" />
+        <property name="quantita" type="int" column="quantita" />
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.OreLavorate" table="orelavorate">
+        <id name="id" type="long" column="id">
+            <generator class="native" />
+        </id>
+        <property name="iddipendente" type="long" column="iddipendente" />
+        <property name="mese" type="string" column="mese" />
+        <property name="oretotali" type="int" column="oretotali" />
+        <property name="orenormali" type="int" column="orenormali" />
+        <property name="orestraordinarie" type="int" column="orestraordinarie" />
+    </class>
+
+</hibernate-mapping>

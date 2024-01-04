@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pezzidilegno</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">adventsql</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!--<mapping resource="Assistenza.hbm.xml"/> -->
+		<mapping resource="Clienti.hbm.xml" />
+		<mapping resource="DettaglioOrdineCliente.hbm.xml"/> 
+		<mapping resource="DettaglioOrdiniFornitori.hbm.xml"/> 
+		<mapping resource="Dipendenti.hbm.xml"/> 
+		<mapping resource="Fornitore.hbm.xml"/> 
+		<mapping resource="Magazzino.hbm.xml"/> 
+		<mapping resource="OrdiniClienti.hbm.xml"/> 
+		 <mapping resource="OrdiniFornitori.hbm.xml"/> 
+		<mapping resource="OreLavorate.hbm.xml"/>
+		<mapping resource="Prodotti.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
